@@ -1,0 +1,43 @@
+.ff-inter-tight {
+  font-family: var(--ff-inter-tight);
+}
+
+.ff-inter {
+  font-family: var(--ff-inter);
+}
+
+.fs-xl {
+  font-size: var(--fs-xl);
+}
+
+.fs-lg {
+  font-size: var(--fs-lg);
+}
+
+.fs-md {
+  font-size: var(--fs-md);
+}
+
+.fs-sm {
+  font-size: var(--fs-sm);
+}
+
+.lh-xl {
+  line-height: var(--lh-xl);
+}
+
+.lh-lg {
+  line-height: var(--lh-lg);
+}
+
+.lh-md {
+  line-height: var(--lh-md);
+}
+
+.fw-bold {
+  font-weight: var(--fw-bold);
+}
+
+.fw-medium {
+  font-weight: var(--fw-medium);
+}
