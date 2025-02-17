@@ -1,0 +1,11 @@
+.btn {
+  padding: .75rem 1.5rem;
+  border-radius: .5rem;
+  background-color: var(--content-brand);
+  color: var(--content-button);
+  text-transform: uppercase;
+  cursor: pointer;
+  &:hover {
+    background-color: var(--background-highlights);
+  }
+}

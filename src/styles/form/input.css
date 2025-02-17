@@ -1,0 +1,95 @@
+.input-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  & label {
+    color: var(--content-primary);
+  }
+  & input {
+    all: unset;
+    border: 1px solid var(--border-primary);
+    border-radius: .5rem;
+    padding: .75rem .75rem .75rem 2.5rem;
+    color: var(--content-primary);
+    font-family: var(--ff-inter);
+    font-size: var(--fs-lg);
+    line-height: 150%;
+    font-weight: var(--fw-medium);
+    &:hover {
+      border: 1px solid var(--border-secondary);
+    }
+    &:focus {
+      border: 1px solid var(--border-brand);
+    }
+  }
+  #pet-name {
+    background: url(/src/assets/icons/Pet-Paw.svg);
+    background-repeat: no-repeat;
+    background-position: .6875rem center;
+  }
+  #tutors-name {
+    background: url(/src/assets/icons/User.svg);
+    background-repeat: no-repeat;
+    background-position: .6875rem center;
+  }
+  #phone {
+    background: url(/src/assets/icons/Phone.svg);
+    background-repeat: no-repeat;
+    background-position: .6875rem center;
+  }
+  #date,
+  #hours {
+    &::-webkit-calendar-picker-indicator {
+      opacity: 0;
+    }
+    &::before {
+      content: "";
+      position: absolute;
+      background: url(/src/assets/icons/Arrow-down.svg) center/contain;
+      right: 1rem;
+      width: 1.25rem;
+      height: 1.25rem;
+
+      top: 50%;
+      transform: translateY(-50%);
+    }
+  }
+  #date {
+    position: relative;
+    background: url(/src/assets/icons/Calendar.svg);
+    background-repeat: no-repeat;
+    background-position: .6875rem center;
+  }
+  #hours {
+    position: relative;
+    background: url(/src/assets/icons/Clock-Circle.svg);
+    background-repeat: no-repeat;
+    background-position: .6875rem center;
+  }
+}
+
+.textarea-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: .25rem;
+  & label {
+    color: var(--content-primary);
+  }
+  & textarea {
+    all: unset;
+    border: 1px solid var(--border-primary);
+    border-radius: .5rem;
+    padding: .75rem;
+    color: var(--content-primary);
+    font-family: var(--ff-inter);
+    font-size: var(--fs-lg);
+    line-height: 150%;
+    font-weight: var(--fw-medium);
+    &:hover {
+      border: 1px solid var(--border-secondary);
+    }
+    &:focus {
+      border: 1px solid var(--border-brand);
+    }
+  }
+}

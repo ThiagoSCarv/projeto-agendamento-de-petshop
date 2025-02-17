@@ -5,14 +5,20 @@
 }
 
 body {
-  overflow: hidden;
+  max-width: 24.375rem;
+  background-color: var(--background);
+  margin-inline: auto;
+  height: 100vh;
 }
 
 :root {
   --content-primary: #FFFFFF;
+  --content-button: #050505;
   --content-secondary: #98959D;
   --content-tertiary: #666666;
   --content-brand: #9282FA;
+  --background: #14151D;
+  --background-logo: #2E2C30;
   --background-primary: #151515;
   --background-secondary: #1E1E1E;
   --background-tertiary: #23242C;
@@ -30,6 +36,7 @@ body {
   --accent-orange-light: #75501B;
   --ff-inter-tight: "Inter Tight", serif;
   --ff-inter: "Inter", serif;
+  --ff-familjen-grotesk: "Familjen Grotesk", serif;
   --fs-xl: 1.5rem;
   --fs-lg: 1rem;
   --fs-md: .875rem;
@@ -39,4 +46,38 @@ body {
   --lh-md: 1rem;
   --fw-bold: 700;
   --fw-medium: 500;
+  --fw-regular: 400;
+  --px-md: 1.25rem;
+}
+
+footer {
+  background-color: var(--background-tertiary);
+  display: flex;
+  justify-content: center;
+  padding-block: 1.125rem;
+}
+
+a {
+  color: var(--content-tertiary);
+  text-decoration: none;
+  &:hover {
+    color: var(--content-primary);
+    text-decoration: underline;
+  }
+}
+
+@media (width >= 85.375rem) {
+  body {
+    max-width: 85.375rem;
+  }
+  
+  :root {
+    --px-md: 20.5rem;
+  }
+
+  footer {
+    background: none;
+    justify-self: flex-end;
+    padding-block: 0 2.125rem;
+  }
 }

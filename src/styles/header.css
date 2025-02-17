@@ -1,0 +1,30 @@
+header {
+  margin-top: 1.375rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  & > div {
+    display: flex;
+    flex-direction: column;
+    gap: .25rem;
+    & h1 {
+      color: #F5F4F5;
+    }
+    & p {
+      color: var(--content-secondary);
+    }
+  }
+  & .input-wrapper {
+    max-width: 11.5rem;
+    & input {
+      color: var(--content-secondary);
+    }
+  }
+}
+
+@media (width >= 85.375rem) {
+  header {
+    flex-direction: row;
+    align-items: center;
+  }
+}

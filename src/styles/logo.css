@@ -1,0 +1,17 @@
+.logo {
+  padding-block: .75rem;
+  background-color: var(--background-logo);
+  max-width: 9.625rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .75rem;
+  border-bottom-right-radius: .5rem;
+  & img {
+    object-fit: cover;
+  }
+  & span {
+    color: var(--background-brand);
+    text-transform: uppercase;
+  }
+}

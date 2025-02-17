@@ -1,0 +1,72 @@
+.schedules-by-period {
+  margin-block: 2rem 3.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: .75rem;
+  & .schedule-period {
+    width: 100%;
+    background-color: var(--background-tertiary);
+    border-radius: .625rem;
+    & header {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      margin: .875rem 1.25rem;
+      & div {
+        display: flex;
+        flex-direction: row;
+        gap: .75rem;
+        & img {
+          max-width: 1.25rem;
+          max-height: 1.25rem;
+          object-fit: cover;
+        }
+        & span {
+          color: var(--content-primary);
+        }
+      }
+      & strong {
+        color: var(--content-secondary);
+      }
+    }
+    & .period {
+      margin: 1.25rem;
+      
+      & li {
+        margin: .75rem;
+        list-style: none;
+        display: flex;
+        flex-direction: column;
+        & div {
+          display: flex;
+          align-items: center;
+          & .schedule-hours {
+            margin-right: .75rem;
+            color: var(--content-primary);
+          }
+          & .pet-name {
+            color: var(--content-primary);
+            margin-right: .25rem;
+          }
+          & .pet-owner {
+            color: var(--content-secondary);
+          }
+        }
+        & .service-description {
+          color: var(--content-secondary);
+        }
+        & .cancel {
+          margin-top: .5rem;
+          align-self: flex-end;
+        }
+      }
+    }
+  }
+}
+
+@media (width >= 85.375rem) {
+  .schedules-by-period {
+    margin-bottom: 0;
+  }
+}

@@ -6,6 +6,10 @@
   font-family: var(--ff-inter);
 }
 
+.ff-familjen-grotesk {
+  font-family: var(--ff-familjen-grotesk);
+}
+
 .fs-xl {
   font-size: var(--fs-xl);
 }
@@ -40,4 +44,12 @@
 
 .fw-medium {
   font-weight: var(--fw-medium);
+}
+
+.fw-regular {
+  font-weight: var(--fw-regular);
+}
+
+.px-md {
+  padding-inline: var(--px-md);
 }
