@@ -1,0 +1,27 @@
+form {
+  max-width: 19.375rem;
+  display: flex;
+  flex-direction: column;
+  & fieldset {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    & legend {
+      color: var(--content-primary);
+    }
+    & p {
+      color: var(--content-secondary);
+      margin-bottom: .75rem;
+    }
+  }
+  & .close-modal {
+    margin-top: 1.75rem;
+    align-self: flex-end;
+  }
+}
+
+@media (width >= 85.375rem) {
+  form {
+    max-width: 25rem;
+  }
+}

@@ -12,7 +12,9 @@
       flex-direction: row;
       justify-content: space-between;
       align-items: center;
-      margin: .875rem 1.25rem;
+      padding: .875rem 1.25rem;
+      margin: 0;
+      border-bottom: 1px outset var(--content-secondary);
       & div {
         display: flex;
         flex-direction: row;
@@ -32,12 +34,17 @@
     }
     & .period {
       margin: 1.25rem;
-      
+      display: grid;
+      gap: 1rem;
+      & li:last-child {
+        border-bottom: 0;
+      }
       & li {
-        margin: .75rem;
         list-style: none;
         display: flex;
         flex-direction: column;
+        padding-block: .75rem;
+        border-bottom: 1px outset var(--content-secondary);
         & div {
           display: flex;
           align-items: center;
@@ -68,5 +75,29 @@
 @media (width >= 85.375rem) {
   .schedules-by-period {
     margin-bottom: 0;
+    & .schedule-period {
+      & .period {
+        gap: 0;
+        & li {
+          padding: 1rem;
+          flex-direction: row;
+          justify-content: space-between;
+          align-items: center;
+          margin-top: .75rem;
+          & div {
+            display: flex;
+            align-items: center;
+            & .schedule-hours {
+              margin-right: 2rem;
+            }
+          }
+          & .cancel {
+            margin-top: 0;
+            align-self: center;
+          }
+        }
+      }
+    }
   }
+  
 }

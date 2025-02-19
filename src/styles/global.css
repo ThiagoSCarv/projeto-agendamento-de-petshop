@@ -79,5 +79,6 @@ a {
     background: none;
     justify-self: flex-end;
     padding-block: 0 2.125rem;
+    margin-right: 1.875rem;
   }
 }

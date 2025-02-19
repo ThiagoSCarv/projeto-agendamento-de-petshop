@@ -53,3 +53,11 @@
 .px-md {
   padding-inline: var(--px-md);
 }
+
+.hide-schedules {
+  filter: blur(.375rem);
+}
+
+.hide-button {
+  display: none;
+}

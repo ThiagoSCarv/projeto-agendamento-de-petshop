@@ -10,12 +10,12 @@
   <link href="https://fonts.googleapis.com/css2?family=Familjen+Grotesk:ital,wght@0,400..700;1,400..700&family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
 </head>
 <body>
+  <div class="logo">
+    <img src="assets/icons/Logo-dog.svg" alt="Logo mundo pet">
+    <span class="ff-familjen-grotesk fs-lg lh-lg fw-bold">Mundo Pet</span>
+  </div>
   <main>
-    <div class="logo">
-      <img src="assets/icons/Logo-dog.svg" alt="Logo mundo pet">
-      <span class="ff-familjen-grotesk fs-lg lh-lg fw-bold">Mundo Pet</span>
-    </div>
-    <header class="px-md">
+    <header class="title px-md">
       <div>
         <h1 class="ff-inter-tight fs-xl lh-xl fw-bold">Sua agenda</h1>
         <p class="ff-inter fs-lg lh-lg fw-regular">Aqui você pode ver todos os clientes e serviços agendados para hoje.</p>
@@ -96,7 +96,7 @@
           <strong class="ff-inter fs-lg lh-lg fw-bold">19h-21h</strong>
         </header>
         <ul id="period-night" class="period">
-          <!--Exemplo de UL-->
+          <!--Exemplo de li-->
           <li>
             <div>
               <strong class="schedule-hours ff-inter fs-md lh-lg fw-bold">20:00</strong>
@@ -109,9 +109,47 @@
         </ul>
       </section>
     </div>
+    <footer>
+      <button class="open-modal btn ff-inter fs-lg lh-lg fw-bold" data-modal="new-schedule-modal">NOVO AGENDAMENTO</button>
+    </footer>
+    <dialog id="new-schedule-modal">
+      <img src="assets/icons/Cancel.svg" alt="Ícone de cancelar">
+      <form method="post" enctype="multipart/form-data">
+        <fieldset>
+          <legend class="ff-inter-tight fs-xl lh-xl fw-bold">Agende um atendimento</legend>
+          <p class="ff-inter fs-md lh-lg fw-medium">Preencha os dados do cliente para realizar o agendamento:</p>
+
+          <div class="input-wrapper">
+            <label for="tutors-name" class="ff-inter fs-md lh-lg fw-bold">Nome do tutor</label>
+            <input type="text" id="tutors-name" name="tutors-name" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="pet-name" class="ff-inter fs-md lh-lg fw-bold">Nome do pet</label>
+            <input type="text" id="pet-name" name="pet-name" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="phone" class="ff-inter fs-md lh-lg fw-bold">Telefone</label>
+            <input type="tel" id="phone" name="phone" required>
+          </div>
+          <div class="textarea-wrapper">
+            <label for="service-description" class="ff-inter fs-md lh-lg fw-bold">Descrição do serviço</label>
+            <textarea name="service-description" id="service-description"></textarea>
+          </div>
+          <div class="input-wrapper">
+            <label for="date" class="ff-inter fs-md lh-lg fw-bold">Telefone</label>
+            <input type="date" id="date" name="date" required>
+          </div>
+          <div class="input-wrapper">
+            <label for="hours" class="ff-inter fs-md lh-lg fw-bold">Telefone</label>
+            <input type="time" id="hours" name="hours" required>
+          </div>
+
+        </fieldset>
+        
+        <button class="close-modal btn ff-inter fs-lg lh-lg fw-bold" type="submit" data-modal="new-schedule-modal">AGENDAR</button>
+      </form>
+    </dialog>
   </main>
-  <footer>
-    <button class="btn ff-inter fs-lg lh-lg fw-bold">NOVO AGENDAMENTO</button>
-  </footer>
+  <script src="./main.js"></script>
 </body>
 </html>
