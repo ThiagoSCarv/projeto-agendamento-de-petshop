@@ -23,17 +23,17 @@
     }
   }
   #pet-name {
-    background: url(/src/assets/icons/Pet-Paw.svg);
+    background: url(/src/assets/Pet-Paw.svg);
     background-repeat: no-repeat;
     background-position: .6875rem center;
   }
   #tutors-name {
-    background: url(/src/assets/icons/User.svg);
+    background: url(/src/assets/User.svg);
     background-repeat: no-repeat;
     background-position: .6875rem center;
   }
   #phone {
-    background: url(/src/assets/icons/Phone.svg);
+    background: url(/src/assets/Phone.svg);
     background-repeat: no-repeat;
     background-position: .6875rem center;
   }
@@ -45,7 +45,7 @@
     &::before {
       content: "";
       position: absolute;
-      background: url(/src/assets/icons/Arrow-down.svg) center/contain;
+      background: url(/src/assets/Arrow-down.svg) center/contain;
       right: 1rem;
       width: 1.25rem;
       height: 1.25rem;
@@ -56,13 +56,13 @@
   }
   #date {
     position: relative;
-    background: url(/src/assets/icons/Calendar.svg);
+    background: url(/src/assets/Calendar.svg);
     background-repeat: no-repeat;
     background-position: .6875rem center;
   }
   #hours {
     position: relative;
-    background: url(/src/assets/icons/Clock-Circle.svg);
+    background: url(/src/assets/Clock-Circle.svg);
     background-repeat: no-repeat;
     background-position: .6875rem center;
   }
