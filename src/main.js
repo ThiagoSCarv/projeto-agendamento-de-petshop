@@ -10,3 +10,9 @@ import "./styles/logo.css"
 import "./styles/modal.css"
 import "./styles/schedules.css"
 import "./styles/utility.css"
+
+//js
+import "./modules/open-modal.js"
+import "./libs/day.js"
+import "./modules/today-date.js"
+import "./modules/page-load.js"
