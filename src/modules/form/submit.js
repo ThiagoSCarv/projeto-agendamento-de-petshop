@@ -41,9 +41,8 @@ form.onsubmit = async (event) => {
 
     const isBefore = dayjs(when).isBefore(dayjs());
 
-    const [isSame] = await isSameHour(when)
-    const avaliable = dayjs(when).isSame(isSame.when)
-  
+    const avaliable = await isSameHour(when)
+    
     if (avaliable || isBefore) {
       alert('Horário indisponível! Tente Novamente.')
     } else {

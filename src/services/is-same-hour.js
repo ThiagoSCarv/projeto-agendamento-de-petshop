@@ -7,9 +7,7 @@ export async function isSameHour(hour) {
 
     const data = await response.json();
 
-    const dailySchedules = data.filter((schedule) => {
-      return schedule
-    });
+    const dailySchedules = data.some((schedule) => dayjs(hour).isSame(schedule.when))
     return dailySchedules
   } catch (error) {
     console.log('Não foi possível buscar os agendamentos do dia')
