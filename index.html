@@ -38,7 +38,7 @@
           <strong class="ff-inter fs-lg lh-lg fw-bold">09h-12h</strong>
         </header>
         <ul id="period-morning" class="period">
-          <!--Exemplo de UL-->
+          <!--Exemplo de UL
           <li>
             <div>
               <strong class="schedule-hours ff-inter fs-md lh-lg fw-bold">09:00</strong>
@@ -47,7 +47,7 @@
             </div>
             <p class="service-description ff-inter fs-md lh-lg fw-medium">Corte de Unhas</p>
             <a class="cancel ff-inter ff-sm lh-md fw-medium" href="#">Remover agendamento</a>
-          </li>
+          </li>-->
         </ul>
       </section>
       <section class="schedule-period">
@@ -59,7 +59,7 @@
           <strong class="ff-inter fs-lg lh-lg fw-bold">13h-18h</strong>
         </header>
         <ul id="period-afternoon" class="period">
-          <!--Exemplo de UL-->
+          <!--Exemplo de UL
           <li>
             <div>
               <strong class="schedule-hours ff-inter fs-md lh-lg fw-bold">13:00</strong>
@@ -86,7 +86,7 @@
             </div>
             <p class="service-description ff-inter fs-md lh-lg fw-medium">Tosa Higiênica</p>
             <a class="cancel ff-inter ff-sm lh-md fw-medium" href="#">Remover agendamento</a>
-          </li>
+          </li>-->
         </ul>
       </section>
       <section class="schedule-period">
@@ -98,16 +98,16 @@
           <strong class="ff-inter fs-lg lh-lg fw-bold">19h-21h</strong>
         </header>
         <ul id="period-night" class="period">
-          <!--Exemplo de li-->
+          <!--Exemplo de li
           <li>
             <div>
               <strong class="schedule-hours ff-inter fs-md lh-lg fw-bold">20:00</strong>
               <span class="pet-name ff-inter fs-md lh-lg fw-bold">Max</span>
               <span class="pet-owner ff-inter fs-md lh-lg fw-medium">/ Camila Santos</span>
             </div>
-            <p class="service-description ff-inter fs-md lh-lg fw-medium">Limpeza de Dentes</p>
+            <p class="service-description ff-inter fs-md lh-lg ">Limpeza de Dentes</p>
             <a class="cancel ff-inter ff-sm lh-md fw-medium" href="#">Remover agendamento</a>
-          </li>
+          </li>-->
         </ul>
       </section>
     </div>
@@ -115,7 +115,7 @@
       <button class="open-modal btn ff-inter fs-lg lh-lg fw-bold" data-modal="new-schedule-modal">NOVO AGENDAMENTO</button>
     </footer>
     <dialog id="new-schedule-modal">
-      <img src="./src/assets/Cancel.svg" alt="Ícone de cancelar">
+      <img class="close" src="./src/assets/Cancel.svg" alt="Ícone de cancelar">
       <form method="post" enctype="multipart/form-data">
         <fieldset>
           <legend class="ff-inter-tight fs-xl lh-xl fw-bold">Agende um atendimento</legend>
@@ -135,16 +135,17 @@
           </div>
           <div class="textarea-wrapper">
             <label for="service-description" class="ff-inter fs-md lh-lg fw-bold">Descrição do serviço</label>
-            <textarea name="service-description" id="service-description"></textarea>
+            <textarea name="service-description" id="service-description" required></textarea>
           </div>
           <div class="date-hours">
             <div class="input-wrapper">
               <label for="date" class="ff-inter fs-md lh-lg fw-bold">Data</label>
-              <input class="date-home" type="date" name="date" id="date" required>
+              <input class="date-home date-submit" type="date" name="date" id="date" required>
             </div>
             <div class="input-wrapper">
               <label for="hours" class="ff-inter fs-md lh-lg fw-bold">Hora</label>
-              <input type="time" id="hours" name="hours" required>
+              <input type="time" id="hours" name="hours"
+                     required>
             </div>
           </div>
         </fieldset>

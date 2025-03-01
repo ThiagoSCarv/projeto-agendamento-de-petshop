@@ -90,6 +90,9 @@
             & .schedule-hours {
               margin-right: 2rem;
             }
+            & span {
+              margin-right: .375rem;
+            }
           }
           & .cancel {
             margin-top: 0;

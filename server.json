@@ -1,3 +1,20 @@
 {
-  "schedules": []
+  "schedules": [
+    {
+      "id": "1740772570248",
+      "clientName": "Thiago",
+      "petName": "Zezinho",
+      "telphone": "62991972659",
+      "description": "Banho",
+      "when": "2025-02-28T23:00:00.000Z"
+    },
+    {
+      "id": "1740779052459",
+      "clientName": "Thiago",
+      "petName": "Zezinho",
+      "telphone": "62991972659",
+      "description": "Banho",
+      "when": "2025-02-28T22:00:00.000Z"
+    }
+  ]
 }
