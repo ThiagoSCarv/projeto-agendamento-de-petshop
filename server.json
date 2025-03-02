@@ -1,36 +1,4 @@
 {
   "schedules": [
-    {
-      "id": 1740861157571,
-      "clientName": "Thiago",
-      "petName": "Zezinho",
-      "telphone": "62991972659",
-      "description": "Tosa",
-      "when": "2025-03-01T21:00:00.000Z"
-    },
-    {
-      "id": 1740861787428,
-      "clientName": "Thiago",
-      "petName": "Zezinho",
-      "telphone": "62991972659",
-      "description": "Banho",
-      "when": "2025-03-01T23:00:00.000Z"
-    },
-    {
-      "id": 1740861858227,
-      "clientName": "Thiago",
-      "petName": "Zezinho",
-      "telphone": "62992978653",
-      "description": "Tosa",
-      "when": "2025-03-01T22:00:00.000Z"
-    },
-    {
-      "id": 1740861880690,
-      "clientName": "Thiago",
-      "petName": "Apolo",
-      "telphone": "62991972659",
-      "description": "Corte de Unha",
-      "when": "2025-03-02T00:00:00.000Z"
-    }
   ]
 }

@@ -68,7 +68,7 @@ form.onsubmit = async (event) => {
     pet.value = ''
     serviceDescription.value = ''
     phone.value = ''
-    
+    hours.value = dayjs().format("HH:mm")
   } catch (error) {
     alert("Erro ao enviar formulário");
     console.log(error);
